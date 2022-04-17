@@ -144,3 +144,9 @@ hr {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+@media screen and (max-width:400px) {
+    
+body{
+    background: #000;
+}
+}
