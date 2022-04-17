@@ -1,126 +1,146 @@
-:root{
-    --primaryColor: hsl(215, 51%, 70%);
-    --secondaryColor: hsl(178, 100%, 50%);
-    --mainBG: hsl(217, 54%, 11%);
-    --cardBG: hsl(216, 50%, 16%);
-    --lineColor:hsl(215, 32%, 27%);
-    --white:hsl(0, 0%, 100%);
+:root {
+  --primaryColor: hsl(215, 51%, 70%);
+  --secondaryColor: hsl(178, 100%, 50%);
+  --mainBG: hsl(217, 54%, 11%);
+  --cardBG: hsl(216, 50%, 16%);
+  --lineColor: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    color: var(--white);
-    font-family: 'Outfit', sans-serif;
-   
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--white);
+  font-family: "Outfit", sans-serif;
 }
-body{
-    background: var(--mainBG);
+body {
+  background: var(--mainBG);
+  cursor: default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.container {
+  width: 300px;
+  height: 500px;
+  padding: 20px;
+  background: var(--cardBG);
+  border-radius: 15px;
+  box-shadow: 17px 18px 5px -7px rgba(0, 0, 0, 0.34);
+  -webkit-box-shadow: 17px 18px 5px -7px rgba(0, 0, 0, 0.34);
+  -moz-box-shadow: 17px 18px 5px -7px rgba(0, 0, 0, 0.34);
+}
+.equi-img {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.image-equilibrium {
+  width: 100%;
+  height: 50%;
+  border-radius: 10px;
+}
 
+.icon-view {
+  position: absolute;
+  display: flex;
+  background: rgba(0, 255, 247, 0.4);
+  opacity: 0;
+  width: 100%;
+  height: 99%;
+  border-radius: 10px;
+  top: 0;
+  transition: opacity 500ms ease-out 100ms;
 }
-.container{
-   width: 300px;
-   height: 500px;
-   margin:20px auto;
- padding: 20px;
-   background: var(--cardBG);
-   border-radius: 15px;
+.icon-view img {
+  display: block;
+  margin: auto;
+  width: 40px;
 }
-.equi-img{
-width: 100%;
+.icon-view:hover {
+  opacity: 1;
 }
-.equi-img img{
-    width: 100%;
-    border-radius: 10px;
+#equi {
+  margin: 15px 0 15px 0;
+  font-size: 16px;
+  transition: color 500ms ease-out 100ms;
 }
-
-#equi{
-margin: 15px 0 15px 0;
-font-size: 16px;
+#equi:hover {
+  cursor: pointer;
+  color: var(--secondaryColor);
 }
-#para{
-    color: var(--primaryColor);
-    font-size: 14px;
-line-height: 18px;
+#para {
+  color: var(--primaryColor);
+  font-size: 14px;
+  line-height: 18px;
 }
-#flex-div{
-    display: flex;
-    justify-content: space-between;
-    margin:20px 0 20px 0;
+#flex-div {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 20px 0;
 }
-.partition{
-    display: flex;
-
+.partition {
+  display: flex;
   margin-top: 6px;
 }
-#price{
-font-size: 14px;
-font-weight: 500;
-word-spacing: -2px;
-
-display: inline-block;
-color: var(--secondaryColor);
-}
-
-#days{
-  color: var(--primaryColor); 
-font-size: 12px;
-display: inline-block;
-
-
-
-
-}
-#time{
-  
+#price {
+  font-size: 14px;
+  font-weight: 600;
   display: inline-block;
-background: #000;
-width: 14px;
+  color: var(--secondaryColor);
 }
-.imgCard{
-   
-
- margin: 0 5px 0 0;
-
+#days {
+  color: var(--primaryColor);
+  font-size: 12px;
+  display: inline-block;
+  padding: 1px;
+  padding-right: 0;
 }
-hr{
-    color: var(--lineColor);
+#time {
+  display: inline-block;
+  height: 16px;
+  margin: 0 5px 0 0;
 }
-.last-wahala{
-margin-top: 12px;
-display: flex;
-
+.imgCard {
+  margin: 0 5px 0 0;
 }
-.last-wahala img{
-   
-    border: 1px solid white;
-    border-radius: 50%;
-    width: 32px;
-    display: inline-block;
-    margin-right: 14px;
+hr {
+  color: var(--lineColor);
 }
-.last-wahala p{
-   
-   padding-top: 7px;
-   font-size: 14px;
-   color: var(--primaryColor);
-   word-spacing: 2px;
+.last-wahala {
+  margin-top: 12px;
+  display: flex;
 }
-.attribution { font-size: 11px; text-align: center; 
-position: absolute;
-bottom: 0;
-right: 0;
-left: 0;}
-.attribution a { color: hsl(228, 45%, 44%); }
-
-
-@media screen and (max-width:375px) {
-.container{
-    width: 260px;
-   height: 400px;
+.last-wahala img {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 28px;
+  display: inline-block;
+  margin-right: 14px;
 }
+.last-wahala p {
+  padding-top: 7px;
+  font-size: 14px;
+  color: var(--primaryColor);
+  word-spacing: 2px;
+  padding: 4px;
 }
-@media screen and (min-width:1440px) {
-    .container{width: 400px;}
+#jules:hover {
+  cursor: pointer;
+  color: var(--secondaryColor);
+  transition: color 500ms ease-out 100ms;
+}
+.allContent {
+  display: flex;
+  flex-direction: column;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 12px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
