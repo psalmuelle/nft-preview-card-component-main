@@ -36,8 +36,8 @@ Atleast, for now, no further development except improvement from suggestions fro
 
 ### Useful resources
 
-- [Example resource 1](https://www.csstricks.com) - This helped me with an image overlay.
-- [Example resource 2](https://www.w3schools.com) - This website was very handy in building this project
+- [csstricks](https://www.csstricks.com) - This helped me with an image overlay.
+- [w3schools](https://www.w3schools.com) - This website was very handy in building this project
 
 ## Author
 
